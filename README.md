@@ -6,3 +6,6 @@
 - [Radix UI](https://www.radix-ui.com/) - Primitives like drawer, button, etc. to build a stellar user experience
 - [Lucide Icons](https://lucide.dev) - Beautifully simple, pixel-perfect icons
 - [Next Themes](https://github.com/pacocoursey/next-themes) - An abstraction for themes (Dark + Light Mode).
+
+#### This is cloned and modified portofolio website
+Original Repository : https://github.com/shahsagarm/sagarshah.dev

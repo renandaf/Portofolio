@@ -1,54 +1,26 @@
-import { Github, Twitter, Figma } from 'lucide-react';
+import { Github, Linkedin, Instagram, Gamepad2 } from 'lucide-react';
 
 import LogoJavascript from '/public/images/logos/icon-javascript.svg';
-import LogoTypescript from '/public/images/logos/icon-typescript.svg';
 import LogoReact from '/public/images/logos/icon-react.svg';
 import LogoNextjs from '/public/images/logos/icon-nextjs.svg';
 import LogoNodejs from '/public/images/logos/icon-nodejs.svg';
-import LogoExpress from '/public/images/logos/icon-express.svg';
-import LogoExpressLight from '/public/images/logos/icon-express-light.svg';
-import LogoNest from '/public/images/logos/icon-nest.svg';
-import LogoSocket from '/public/images/logos/icon-socket.svg';
-import LogoSocketLight from '/public/images/logos/icon-socket-light.svg';
-import LogoPostgreSQL from '/public/images/logos/icon-postgresql.svg';
-import LogoMongoDB from '/public/images/logos/icon-mongodb.svg';
-import LogoSass from '/public/images/logos/icon-sass.svg';
-import LogoTailwindcss from '/public/images/logos/icon-tailwindcss.svg';
 import LogoFigma from '/public/images/logos/icon-figma.svg';
-import LogoCypress from '/public/images/logos/icon-cypress.svg';
-import LogoCypressLight from '/public/images/logos/icon-cypress-light.svg';
-import LogoStorybook from '/public/images/logos/icon-storybook.svg';
 import LogoGit from '/public/images/logos/icon-git.svg';
+import LogoUnity from '/public/images/logos/icon-unity.svg';
+import LogoCsharp from '/public/images/logos/icon-csharp.svg';
+import LogoPhotoshop from '/public/images/logos/icon-photoshop.svg';
+import LogoFlutter from '/public/images/logos/icon-flutter.svg';
+import LogoAndroid from '/public/images/logos/icon-android.svg';
+import LogoAseprite from '/public/images/logos/icon-aseprite.svg';
 
-import LogoUpwork from '/public/images/logos/logo-upwork.svg';
-import LogoGreenApex from '/public/images/logos/logo-greenapex.svg';
-import LogoGreenApexLight from '/public/images/logos/logo-greenapex-light.svg';
-import LogoDotnpixel from '/public/images/logos/logo-dotnpixel.svg';
-import LogoDotnpixelLight from '/public/images/logos/logo-dotnpixel-light.svg';
-
-import ProjectFiskil from '/public/images/project-fiskil.png';
-import ProjectWingie from '/public/images/project-wingie.png';
-import ProjectPepehousing from '/public/images/project-pepehousing.png';
-
-import AvatarKrisztian from '/public/images/avatar-krisztian.png';
-import AvatarEugen from '/public/images/avatar-eugen.png';
-import AvatarDummy from '/public/images/avatar-dummy.svg';
+import LogoPCR from '/public/images/logos/Logo_pcr.png';
+import LogoPharos from '/public/images/logos/Logo_Pharos.png';
 
 import {
   ExperienceDetails,
   ProjectDetails,
   TechDetails,
-  TestimonialDetails,
 } from '@/lib/types';
-
-export const EXTERNAL_LINKS = {
-  GITHUB: 'https://github.com/shahsagarm',
-  GITHUB_REPO: 'https://github.com/shahsagarm/sagarshah.dev',
-  TWITTER: 'https://twitter.com/shahsagarm',
-  FIGMA: 'https://www.figma.com/@shahsagarm',
-  FIGMA_FILE:
-    'https://www.figma.com/community/file/1262992249991763120/Personal-Portfolio-Website-Template-%7C-Mobile-%26-Desktop',
-};
 
 export const NAV_LINKS = [
   {
@@ -56,12 +28,16 @@ export const NAV_LINKS = [
     href: '#about',
   },
   {
-    label: 'Work',
-    href: '#work',
+    label: 'Experience',
+    href: '#experience',
   },
   {
-    label: 'Testimonials',
-    href: '#testimonials',
+    label: 'Skills',
+    href: '#skills',
+  },
+  {
+    label: 'Projects',
+    href: '#projects',
   },
   {
     label: 'Contact',
@@ -72,28 +48,37 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = [
   {
     icon: Github,
-    url: 'https://github.com/shahsagarm',
+    url: 'https://github.com/renandaf',
   },
   {
-    icon: Twitter,
-    url: 'https://twitter.com/shahsagarm',
+    icon: Linkedin,
+    url: 'www.linkedin.com/in/mrenandaf',
   },
   {
-    icon: Figma,
-    url: 'https://www.figma.com/@shahsagarm',
+    icon: Instagram,
+    url: 'https://www.instagram.com/rennd_f/',
+  },
+  {
+    icon: Gamepad2,
+    url: 'https://renand-studio.itch.io/',
   },
 ];
 
 export const TECHNOLOGIES: TechDetails[] = [
+    {
+    label: 'Unity',
+    logo: LogoUnity,
+    url: 'https://unity.com/',
+  },
+  {
+    label: 'C#',
+    logo: LogoCsharp,
+    url: 'https://learn.microsoft.com/en-us/dotnet/csharp/',
+  },
   {
     label: 'Javascript',
     logo: LogoJavascript,
     url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-  },
-  {
-    label: 'Typescript',
-    logo: LogoTypescript,
-    url: 'https://www.typescriptlang.org/',
   },
   {
     label: 'React',
@@ -106,62 +91,34 @@ export const TECHNOLOGIES: TechDetails[] = [
     url: 'https://nextjs.org/',
   },
   {
+    label: 'Flutter',
+    logo: LogoFlutter,
+    url: 'https://flutter.dev/',
+  },
+    {
+    label: 'Android Studio',
+    logo: LogoAndroid,
+    url: 'https://developer.android.com/studio',
+  },
+  {
     label: 'Node.js',
     logo: LogoNodejs,
     url: 'https://nodejs.org/en',
-  },
-  {
-    label: 'Express.js',
-    logo: LogoExpress,
-    darkModeLogo: LogoExpressLight,
-    url: 'https://expressjs.com/',
-  },
-  {
-    label: 'Nest.js',
-    logo: LogoNest,
-    url: 'https://nestjs.com/',
-  },
-  {
-    label: 'Socket.io',
-    logo: LogoSocket,
-    darkModeLogo: LogoSocketLight,
-    url: 'https://socket.io/',
-  },
-  {
-    label: 'PostgreSQL',
-    logo: LogoPostgreSQL,
-    url: 'https://www.postgresql.org/',
-  },
-  {
-    label: 'MongoDB',
-    logo: LogoMongoDB,
-    url: 'https://www.mongodb.com/',
-  },
-  {
-    label: 'Sass/Scss',
-    logo: LogoSass,
-    url: 'https://sass-lang.com/',
-  },
-  {
-    label: 'Tailwindcss',
-    logo: LogoTailwindcss,
-    url: 'https://tailwindcss.com/',
   },
   {
     label: 'Figma',
     logo: LogoFigma,
     url: 'https://www.figma.com/',
   },
-  {
-    label: 'Cypress',
-    logo: LogoCypress,
-    darkModeLogo: LogoCypressLight,
-    url: 'https://www.cypress.io/',
+    {
+    label: 'Photoshop',
+    logo: LogoPhotoshop,
+    url: 'https://www.adobe.com/id_en/products/photoshop.html',
   },
-  {
-    label: 'Storybook',
-    logo: LogoStorybook,
-    url: 'https://storybook.js.org/',
+    {
+    label: 'Aseprite',
+    logo: LogoAseprite,
+    url: 'https://www.aseprite.org/',
   },
   {
     label: 'Git',
@@ -171,121 +128,63 @@ export const TECHNOLOGIES: TechDetails[] = [
 ];
 
 export const EXPERIENCES: ExperienceDetails[] = [
-  {
-    logo: LogoUpwork,
-    logoAlt: 'Upwork logo',
-    position: 'Independent Freelancer',
-    startDate: new Date(2021, 10),
-    currentlyWorkHere: true,
+  { 
+    logo: LogoPCR,
+    logoAlt: 'Logo PCR',
+    position: 'Apllied Bachelor Student in Informatics Engineering',
+    place: "Polytechnic Caltex Riau",
+    startDate: new Date(2021, 8),
+    endDate: new Date(2025, 8),
     summary: [
-      'Worked for various clients like Fiskil, Shosho, Crowe MacKay LLP.',
-      'Worked with a variety of technologies, including React, Next.js, Typescript, Express.js, PostgreSQL, Tailwindcss, Mui, Firebase, Storybook, Cypress, and others.',
+      'Graduated with a GPA 3.95 / 4',
+      'Active in organizations and have participated in several event committees.',
     ],
   },
   {
-    logo: LogoGreenApex,
-    darkModeLogo: LogoGreenApexLight,
+    logo: LogoPharos,
+    darkModeLogo: LogoPharos,
     logoAlt: 'Greenapex logo',
-    position: 'Team Lead',
-    startDate: new Date(2017, 6),
-    endDate: new Date(2021, 9),
+    position: 'Front-end Developer Intern',
+    place: "Pharos Indonesia",
+    startDate: new Date(2024, 1),
+    endDate: new Date(2024, 6),
     summary: [
-      'Acted as team lead in different projects.',
-      'Brainstormed new ideas & gathered requirements for internal projects.',
-      'Designed architecture of different projects (frontend + backend).',
-      'Worked on enterprise-level projects for a variety of clients.',
-      'Handled sprint planning & task distribution.',
+      'Developed and improved internal web-based systems using React with Next.js Framework for the frontend and Golang for the backend.',
+      'Assisted in adding new features to the company’s internal website to enhance functionality and user experience.',
+      'Helped identify and fix bugs to improve website stability and performance.',
+      'Collaborated with cross-functional teams to resolve issues and implement enhancements across multiple divisions.',
+      'Gained hands-on experience in building scalable enterprise-level applications within a corporate environment.',
     ],
-  },
-  {
-    logo: LogoDotnpixel,
-    darkModeLogo: LogoDotnpixelLight,
-    logoAlt: 'Dotnpixel logo',
-    position: 'Full Stack Developer',
-    startDate: new Date(2015, 11),
-    endDate: new Date(2017, 4),
-    summary: ['Worked as a full stack developer (React / Laravel).'],
   },
 ];
 
 export const PROJECTS: ProjectDetails[] = [
   {
-    name: 'Wingie',
+    name: 'Racket Mania',
     description:
       'A platform for comparing and finding affordable flights, as well as booking and purchasing tickets safely and easily in a few simple clicks.',
-    url: 'https://www.wingie.com',
-    previewImage: ProjectWingie,
-    technologies: [
-      'React',
-      'Typescript',
-      'React Bootstrap',
-      'Firebase',
-      'Express.js',
-      'PostgreSQL',
-      'Styled Components',
-      'Redux',
-    ],
+    url: 'https://renand-studio.itch.io/racket-mania',
+    youtube:"https://youtu.be/95Sg0Vx6SBE"
   },
   {
-    name: 'Fiskil',
+    name: 'Night Ride',
     description:
       'A platform for accessing real-time open banking and energy data to help you grow your business, backed with scalable back-end infrastructure.',
-    url: 'https://fiskil.com.au',
-    previewImage: ProjectFiskil,
-    technologies: [
-      'React',
-      'Next.js',
-      'Typescript',
-      'Tailwindcss',
-      'Material UI',
-      'Redux Toolkit',
-      'React Query',
-      'Express.js',
-      'PostgreSQL',
-      'Firebase',
-      'AWS Amplify',
-      'Cypress',
-      'Storybook',
-    ],
+    url: 'https://renand-studio.itch.io/night-ride',
+    youtube:"https://youtu.be/g7LkJ-Q6fsM"
   },
   {
-    name: 'Pepehousing',
+    name: 'Deep Sea Quest',
     description:
       'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
-    url: 'https://pepehousing.com',
-    previewImage: ProjectPepehousing,
-    technologies: [
-      'React',
-      'Next.js',
-      'Typescript',
-      'Tailwindcss',
-      'Redux Toolkit',
-      'React Query',
-      'Storybook',
-    ],
-  },
-];
-
-export const TESTIMONIALS: TestimonialDetails[] = [
-  {
-    personName: 'Krisztian Gyuris',
-    personAvatar: AvatarKrisztian,
-    title: 'Founder - inboxgenie.io',
-    testimonial:
-      'Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.',
+    url: 'https://renand-studio.itch.io/deep-sea-quest',
+    youtube:"https://youtu.be/Xqqt-EDYfIU"
   },
   {
-    personName: 'Eugen Esanu',
-    personAvatar: AvatarEugen,
-    title: 'Founder - shosho.design',
-    testimonial:
-      'Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.',
-  },
-  {
-    personName: 'Joe Matkin',
-    personAvatar: AvatarDummy,
-    title: 'Freelancer',
-    testimonial:
-      'Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.',
+    name: 'Siak Palace Virtual Reality',
+    description:
+      'A platform for renting a flat or room in Poland. You may browse hundreds of verified deals, contact the vendor, and pay online in a simple and secure manner.',
+    url: 'https://renand-studio.itch.io/siak-palace-tour',
+    youtube:"https://youtu.be/_l12_Q5bXRc"
   },
 ];

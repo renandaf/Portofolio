@@ -12,8 +12,8 @@ import Container from '@/components/layout/container';
 import useWindowSize from '@/hooks/use-window-size';
 import { copyTextToClipboard } from '@/lib/utils';
 
-let email = 'reachsagarshah@gmail.com';
-let phone = '+91 8980500565';
+let email = 'm.renandaf@gmail.com';
+let phone = '+62 82385140566';
 
 type CopyValue = 'email' | 'phone';
 
@@ -48,8 +48,8 @@ const ContactSection = () => {
           <Tag label="Get in touch" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          What’s next? Feel free to reach out to me if you are looking for a
-          developer, have a query, or simply want to connect.
+          What’s next? Feel free to reach out to me if you are looking for a game
+          developer or simply want to connect.
         </Typography>
       </div>
 

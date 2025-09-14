@@ -12,6 +12,7 @@ export type ExperienceDetails = {
   darkModeLogo?: string | StaticImageData;
   logoAlt: string;
   position: string;
+  place: string;
   currentlyWorkHere?: boolean;
   startDate: Date;
   endDate?: Date;
@@ -22,8 +23,7 @@ export type ProjectDetails = {
   name: string;
   description: string;
   url: string;
-  previewImage: string | StaticImageData;
-  technologies: string[];
+  youtube: string;
 };
 
 export type TestimonialDetails = {

@@ -6,16 +6,15 @@ import Container from '@/components/layout/container';
 
 const ExperienceSection = () => {
   return (
-    <Container className="bg-gray-50">
-      <div className="flex flex-col items-center gap-4">
+    <Container className="bg-gray-1000" id="experience">
+      <div className="flex flex-col items-center gap-1">
         <div className="self-center">
-          <Tag label="Experience" />
+          <Tag label="Education & Experience" classFont="text-black"/>
         </div>
-        <Typography variant="subtitle" className="max-w-xl text-center">
+        <Typography variant="subtitle" className="max-w-xl text-center text-gray-200">
           Here is a quick summary of my most recent experiences:
         </Typography>
       </div>
-
       {EXPERIENCES?.map((experience, index) => (
         <ExperienceDetails {...experience} key={index} />
       ))}

@@ -6,13 +6,13 @@ import Container from '@/components/layout/container';
 
 const SkillsSection = () => {
   return (
-    <Container>
-      <div className="flex flex-col items-center gap-4">
+    <Container id="skills">
+      <div className="flex flex-col items-center gap-1">
         <div className="self-center">
-          <Tag label="Skills" />
+          <Tag label="Skills" classFont="text-white" />
         </div>
         <Typography variant="subtitle" className="max-w-xl text-center">
-          The skills, tools and technologies I am really good at:
+          The Skills, tools, and technologies I can use:
         </Typography>
       </div>
 

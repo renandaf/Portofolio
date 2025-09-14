@@ -13,26 +13,30 @@ const ExperienceDetails = ({
   darkModeLogo,
   logoAlt,
   position,
+  place,
   currentlyWorkHere,
   startDate,
   endDate,
   summary,
 }: ExperienceDetailsProps) => {
   return (
-    <Card className="mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
+    <Card className="bg-white mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
       <div className="max-md:order-1 md:w-1/4">
         <ImageWrapper
           src={logo}
           srcForDarkMode={darkModeLogo}
           alt={logoAlt}
-          className="max-w-[120px]"
+          className="max-w-[170px]"
         />
       </div>
-      <div className="flex flex-col gap-4 max-md:order-3 md:w-2/4">
-        <Typography variant="subtitle" className="font-semibold text-gray-900">
+      <div className="flex flex-col gap-1 max-md:order-3 md:w-2/4">
+        <Typography variant="subtitle" className="font-semibold text-gray-100">
           {position}
         </Typography>
-        <ul className="flex list-disc flex-col gap-2 md:gap-1">
+        <Typography variant="body2" className="font-medium text-gray-500 mb-3">
+          at {place}
+        </Typography>
+        <ul className="flex list-disc flex-col gap-2 md:gap-1 text-gray-300">
           {summary?.map((sentence, index) => (
             <Typography component="li" key={index}>
               {sentence}
@@ -41,7 +45,7 @@ const ExperienceDetails = ({
         </ul>
       </div>
       <div className="max-md:order-2 md:w-1/4">
-        <Typography className="text-gray-700 md:text-right">
+        <Typography className="text-gray-300 md:text-right">
           {new Intl.DateTimeFormat('en-US', dateFormatOptions).format(
             startDate
           )}{' '}

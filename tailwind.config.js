@@ -22,6 +22,7 @@ module.exports = {
           800: 'rgb(var(--app-gray-800) / <alpha-value>)',
           900: 'rgb(var(--app-gray-900) / <alpha-value>)',
           950: 'rgb(var(--app-gray-950) / <alpha-value>)',
+          1000: '#F9FAFB',
         },
       },
       keyframes: {

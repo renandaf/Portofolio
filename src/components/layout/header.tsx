@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-
+import Image from 'next/image';
 import {
   Drawer,
   DrawerTrigger,
@@ -18,11 +18,14 @@ import ThemeSwitcher from '@/components/general/theme-switcher';
 import IconButton from '@/components/general/icon-button';
 import DownloadCV from '@/components/general/download-cv';
 import Typography from '@/components/general/typography';
+import Banner from '/public/images/banner.png';
 
 const Logo = () => (
-  <Typography variant="h3" className="font-bold">
-    {'<SS />'}
-  </Typography>
+     <Image
+        src={Banner}
+              alt="Banner"
+               className="h-[50px] w-[180px] max-md:left-3 md:right-0 md:top-0 md:h-[60px] md:w-[230px] lg:h-[70px] lg:w-[280px]"             
+      ></Image>
 );
 
 const Header = () => {
@@ -58,7 +61,6 @@ const Header = () => {
           </ul>
           <div className="h-6 w-0.5 bg-gray-100"></div>
           <div className="flex items-center gap-4">
-            <ThemeSwitcher />
             <DownloadCV />
           </div>
         </div>
@@ -98,10 +100,6 @@ const Header = () => {
               </ul>
             </div>
             <div className="flex flex-col gap-4 p-4">
-              <div className="flex items-center justify-between">
-                <Typography>Switch Theme</Typography>
-                <ThemeSwitcher />
-              </div>
               <DownloadCV />
             </div>
           </DrawerContent>

@@ -6,13 +6,13 @@ import Container from '@/components/layout/container';
 
 const WorkSection = () => {
   return (
-    <Container id="work">
-      <div className="flex flex-col items-center gap-4">
+    <Container id="projects" className='bg-gray-1000'>
+      <div className="flex flex-col items-center gap-1">
         <div className="self-center">
-          <Tag label="Work" />
+          <Tag label="Projects" classFont='text-black'/>
         </div>
-        <Typography variant="subtitle" className="max-w-xl text-center">
-          Some of the noteworthy projects I have built:
+          <Typography variant="subtitle" className="max-w-xl text-center text-gray-200">
+          Some of the projects I have built:
         </Typography>
       </div>
 

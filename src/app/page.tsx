@@ -1,16 +1,20 @@
+
 import HeroSection from '@/components/sections/hero';
 import ContactSection from '@/components/sections/contact';
 import SkillsSection from '@/components/sections/skills';
 import ExperienceSection from '@/components/sections/experiences';
-import WorkSection from '@/components/sections/work';
+import ToolsSection from '@/components/sections/project';
+import TestimonialsSection from '@/components/sections/tools';
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <ExperienceSection />
-      <SkillsSection />    
-      <WorkSection />
+      <SkillsSection /> 
+      <ToolsSection />
+      <hr  className='border-gray-700'/>
+      <TestimonialsSection />    
       <ContactSection />
     </>
   );

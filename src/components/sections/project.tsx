@@ -4,15 +4,15 @@ import Tag from '@/components/data-display/tag';
 import Typography from '@/components/general/typography';
 import Container from '@/components/layout/container';
 
-const WorkSection = () => {
+const ProjectSection = () => {
   return (
-    <Container id="projects" className='bg-gray-1000'>
+    <Container id="games" className='bg-gray-1000'>
       <div className="flex flex-col items-center gap-1">
         <div className="self-center">
-          <Tag label="Projects" classFont='text-black'/>
+          <Tag label="Games" classFont='text-black'/>
         </div>
           <Typography variant="subtitle" className="max-w-xl text-center text-gray-200">
-          Some of the projects I have built:
+          Some of the games I have built:
         </Typography>
       </div>
 
@@ -27,4 +27,4 @@ const WorkSection = () => {
   );
 };
 
-export default WorkSection;
+export default ProjectSection;

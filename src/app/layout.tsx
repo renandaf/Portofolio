@@ -9,7 +9,7 @@ import Footer from '@/components/layout/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
-const title = 'Portofolio M.Renanda Firdhausa';
+const title = 'Renanda Portfolio';
 const description =
   'Game developer using Unity';
 const url = 'https://renand.dev';
@@ -72,11 +72,9 @@ export default function RootLayout({
         </head>
       ) : null}
       <body className={`${inter.className} bg-gray text-gray-600 antialiased`}>
-        <Providers>
           <Header />
           <main className="flex min-h-screen w-full flex-col">{children}</main>
           <Footer />
-        </Providers>
       </body>
     </html>
   );

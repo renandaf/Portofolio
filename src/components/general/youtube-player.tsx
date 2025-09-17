@@ -20,6 +20,7 @@ const YouTubePlayer = ({
         loop
         width="100%"
         height="100%"
+        autoPlay
       />
     </div>
   );

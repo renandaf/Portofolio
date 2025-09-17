@@ -31,10 +31,11 @@ const HeroSection = () => {
               Hi, I&apos;m Renanda
             </Typography>
             <Typography>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident similique ipsa at, deserunt distinctio illo illum magnam dolores corrupti maxime natus dolorem praesentium sint? Ratione, quaerat libero vero quo neque odio nemo illo eaque commodi molestias? Eaque, nulla tempore? Facilis perferendis commodi porro, voluptatibus numquam fugit at repudiandae, eius voluptas ducimus, consectetur similique quas quam. Enim quia, inventore deserunt odio iure, nesciunt numquam facere cum nam laudantium voluptate quam! Incidunt nam consequatur accusantium distinctio. Quod dicta modi porro, similique repudiandae omnis quaerat, ea amet autem pariatur debitis numquam non beatae nihil maiores minus itaque, rerum sapiente tempore reiciendis iusto?
-            </Typography>
-             <Typography>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ipsam deserunt quia eveniet quae quod ipsum est illo dolorem facere, soluta odit beatae rerum deleniti velit tempore quibusdam ipsa possimus autem debitis molestiae culpa repellat aliquam! Hic dolorem alias blanditiis perspiciatis quos, rem quas molestias provident et, mollitia odio deleniti.
+              I’m M.Renanda Firdhausa, a fresh graduate student in Informatics Engineering with a strong interest in game development. I love games and enjoy bringing ideas to life by creating experiences that captivate and delight players. During my studies, I have gained foundational skills in programming and software development. I am eager to apply these skills in real-world challenges and continuously learning new technologies and tools to grow as a developer. 
+             </Typography>
+              <Typography>
+              I have developed several simple games mainly using Unity, which has allowed me to gain valuable practical experience in the game development process. My main focus is implementing interesting ideas into the main mechanics of the game through coding, as well as creating shaders and effects to enhance the visual quality and atmosphere of the game.
+              In my final year, I also have experience in Virtual Reality by creating a VR application simulating the Siak Palace as part of my thesis project. This simulation allows users to explore the Siak Palace virtually, providing a realistic and immersive tour.
              </Typography>
           </div>
           <div className="flex flex-col gap-2">

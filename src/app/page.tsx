@@ -3,8 +3,8 @@ import HeroSection from '@/components/sections/hero';
 import ContactSection from '@/components/sections/contact';
 import SkillsSection from '@/components/sections/skills';
 import ExperienceSection from '@/components/sections/experiences';
-import ToolsSection from '@/components/sections/project';
-import TestimonialsSection from '@/components/sections/tools';
+import ProjectSection from '@/components/sections/project';
+import ToolsSection from '@/components/sections/tools';
 
 export default function Home() {
   return (
@@ -12,9 +12,9 @@ export default function Home() {
       <HeroSection />
       <ExperienceSection />
       <SkillsSection /> 
-      <ToolsSection />
+      <ProjectSection />
       <hr  className='border-gray-700'/>
-      <TestimonialsSection />    
+      <ToolsSection />    
       <ContactSection />
     </>
   );

@@ -9,7 +9,7 @@ const Footer = () => {
         <Typography className="flex items-center" variant="body2">
           <Copyright className="mr-1 inline-block h-4 w-4" />
           {new Date().getFullYear()} |&nbsp;
-          Thank you for coming.       
+          Thank you for coming.         
         </Typography>
       </div>
     </footer>

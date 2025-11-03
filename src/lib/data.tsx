@@ -197,6 +197,15 @@ export const PROJECTS: ProjectDetails[] = [
     url: 'https://renand-studio.itch.io/siak-palace-tour',
     youtube:"https://youtu.be/_l12_Q5bXRc"
   },
+   {
+    name: '2D Platformer Prototype',
+    description:
+      'Just some prototype i make for my upcoming 2D Platformer',
+      list:["Include some advanced movement for 2D Platformer like Apex modifier, Jump Buffer, Coyote time, Fall modifier, Wall slide, and Wall jumping.", "Simple sprite animation and Tilemap."],
+    url: 'https://renand-studio.itch.io/2d-platformer-movement',
+    youtube:""
+  },
+
 ];
 
 export const TOOLS: ToolsDetails[] = [

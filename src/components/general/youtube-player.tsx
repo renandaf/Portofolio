@@ -21,6 +21,7 @@ const YouTubePlayer = ({
         width="100%"
         height="100%"
         autoPlay
+        controls
       />
     </div>
   );

@@ -28,10 +28,10 @@ const ToolsDetails = ({
       {video != "" ? (
         <div>
           <HoverVideoPlayer
-            loop={false}
+            loop
             restartOnPaused
             playbackRangeStart={0.8}
-            hoverTarget={() => document.getElementById(id.toString())}
+            focused
             videoSrc={video}
             // pausedOverlay={
             //   <img

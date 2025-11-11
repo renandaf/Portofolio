@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
+import { Gamepad,Github  } from "lucide-react";
 import { ProjectDetails as ProjectDetailsType } from "@/lib/types";
 import { mergeClasses } from "@/lib/utils";
 import Typography from "@/components/general/typography";
@@ -18,6 +18,7 @@ const ProjectDetails = ({
   list,
   url,
   youtube,
+  github,
   layoutType = "default",
 }: ProjectDetailsProps) => {
   return (
@@ -61,14 +62,23 @@ const ProjectDetails = ({
           ))}
         </ul>
         <Button
-          className="bg-black px-4 py-1.5 font-medium text-gray-1000 transition-colors duration-200 hover:bg-gray-100 active:bg-gray-200"
+          className="px-4 py-1.5 font-medium text-gray-1000 transition-colors duration-200 hover:bg-red-500 active:bg-red-400 bg-red-400"
           onClick={() => {
             window.location.href = url;
           }}
         >
           Play the demo
-          <ExternalLink className="ml-2 stroke-gray-1000" />
+          <Gamepad className="ml-2 stroke-gray-1000" />
         </Button>
+        {github ?  <Button
+          className=" px-4 py-1.5 font-medium text-gray-1000 transition-colors duration-200 hover:bg-indigo-500 active:bg-indigo-400 bg-indigo-400"
+          onClick={() => {
+            window.location.href = github;
+          }}
+        >
+          Full Code
+          <Github className="ml-2 stroke-gray-1000" />
+        </Button>: <></>}
       </div>
     </Card>
   );

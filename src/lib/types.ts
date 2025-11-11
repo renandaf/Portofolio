@@ -25,6 +25,7 @@ export type ProjectDetails = {
   list: string[];
   url: string;
   youtube: string;
+  github: string;
 };
 
 export type ToolsDetails = {

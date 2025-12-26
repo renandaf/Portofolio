@@ -19,6 +19,7 @@ const ProjectDetails = ({
   url,
   youtube,
   github,
+  iframe,
   layoutType = "default",
 }: ProjectDetailsProps) => {
   return (
@@ -36,9 +37,10 @@ const ProjectDetails = ({
         {youtube ? (
           <YouTubePlayer url={youtube} />
         ) : (
-          <Typography variant="h1" className="font-semibold text-gray-500">
-            Coming Soon
-          </Typography>
+          <p
+            className="Features"
+            dangerouslySetInnerHTML={{ __html: iframe }}
+          />
         )}
       </div>
 

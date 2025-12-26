@@ -172,7 +172,8 @@ export const PROJECTS: ProjectDetails[] = [
     list:['Swing mechanic that uses the velocity of the rigid body of the ball to control the ball movement.','AI system that follows the landing point of the ball and move or jump accordingly.', 'AI ability to choose between two kinds of swings (regular and smash).','Game manager script that controls the flow of the game by implementing Unity event and Singleton.'],
     url: 'https://renand-studio.itch.io/racket-mania',
     youtube:"https://youtu.be/95Sg0Vx6SBE",
-    github:"https://github.com/renandaf/Racket-Mania-Unity"
+    github:"https://github.com/renandaf/Racket-Mania-Unity",
+    iframe:""
   },
   {
     name: 'Night Ride',
@@ -181,7 +182,8 @@ export const PROJECTS: ProjectDetails[] = [
       list:["This is the first time I've used pre-processing to create an ominous nighttime atmosphere.", "Endless road script that spawns obstacles and coins in random positions by utilizing the resource folder in Unity to store assets.", "Data driven car data and properties using ScriptableObject in Unity"],
     url: 'https://renand-studio.itch.io/night-ride',
     youtube:"https://youtu.be/g7LkJ-Q6fsM",
-    github:"https://github.com/renandaf/Night-Ride-Unity"
+    github:"https://github.com/renandaf/Night-Ride-Unity",
+    iframe:""
   },
   {
     name: 'Deep Sea Quest',
@@ -190,7 +192,8 @@ export const PROJECTS: ProjectDetails[] = [
       list:["Dynamic player movement control for land movement and water movement.", "State machine that organizes the player's animation and control player state when on the ground or in the water.","Spawner script that spawns a fish in a specific area, as well as a fish behavior script that uses inheritance and interfaces to controls how the fish behaves.", "Quest system with data driven dialog for each quest.", "Inventory system that can store and remove object"],
     url: 'https://renand-studio.itch.io/deep-sea-quest',
     youtube:"https://youtu.be/Xqqt-EDYfIU",
-    github:""
+    github:"",
+    iframe:""
   },
   {
     name: 'Siak Palace Virtual Reality',
@@ -199,7 +202,8 @@ export const PROJECTS: ProjectDetails[] = [
       list:["It was created using the Unity XR Interaction Toolkit plugin.", "VR player movement featuring custom hand grabs and body with IK leg animations.", "Create a system that inspects and displays information in an immersive way.", "Create a system for saving data that stores information and progress in a file."],
     url: 'https://renand-studio.itch.io/siak-palace-tour',
     youtube:"https://youtu.be/_l12_Q5bXRc",
-    github:"https://github.com/renandaf/VR-ISTANA-SIAK-UNITY"
+    github:"https://github.com/renandaf/VR-ISTANA-SIAK-UNITY",
+    iframe:""
   },
   {
     name: 'After Time',
@@ -208,7 +212,18 @@ export const PROJECTS: ProjectDetails[] = [
        list:["Include some advanced movement for 2D Platformer like apex modifier, jump Buffer, coyote time, fall modifier, wall slide, wall jump and dash","Parallax moving background with some cinemachine camera setup.","System to modify object state based on time and not affected by application frame rate such as stop object movement and rewind object state."],
     url: 'https://renand-studio.itch.io/after-time',
     youtube:"https://youtu.be/KRg9YNYcsjQ",
-    github:""
+    github:"",
+    iframe:""
+  },
+  {
+    name: '2D Platformer prototype',
+    description:
+      'Prototype of a 2D platformer game with advanced player movement like double jump, wall slide, wall jump, dash, coyote time, jump buffer, apex modifier, and fall modifier.',
+       list:["Advanced player movement like double jump, wall slide, wall jump, dash, coyote time, jump buffer, apex modifier, and fall modifier.","Online time leaderboard."],
+    url: 'https://renand-studio.itch.io/2d-platformer-movement',
+    youtube:'',
+    github:"",
+    iframe:'<iframe frameborder="0" src="https://itch.io/embed/4010454" width="552" height="167"><a href="https://renand-studio.itch.io/2d-platformer-movement">2D Platformer Prototype by Renand Studio</a></iframe>'
   },
 
 ];

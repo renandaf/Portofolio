@@ -26,6 +26,7 @@ export type ProjectDetails = {
   url: string;
   youtube: string;
   github: string;
+  iframe: string;
 };
 
 export type ToolsDetails = {
